@@ -1,22 +1,64 @@
 import { LocaleInput } from '../index.js'
 
-const tg: LocaleInput = {
+export default {
   code: 'tg',
 
+  week: {
+    dow: 1,
+    doy: 4,
+  },
+
   buttonText: {
-    prev: 'Ба қафо',
-    next: 'Ба пеш',
+    prev: 'Қаблӣ',
+    next: 'Баъдӣ',
     today: 'Имрӯз',
+    year: 'Сол',
     month: 'Моҳ',
     week: 'Ҳафта',
     day: 'Рӯз',
-    list: 'Рӯйхат'
+    list: 'Рӯйхат',
   },
 
   weekText: 'Ҳафта',
   allDayText: 'Тамоми рӯз',
-  moreLinkText: (n) => `+${n} боз`,
-  noEventsText: 'Ягон рӯйдод нест'
-}
 
-export default tg
+  moreLinkText(n) {
+    return '+ бештар ' + n
+  },
+
+  noEventsText: 'Ҳеҷ рӯйдоде барои намоиш нест',
+
+  dayNames: ['Якшанбе', 'Душанбе', 'Сешанбе', 'Чоршанбе', 'Панҷшанбе', 'Ҷумъа', 'Шанбе'],
+  dayNamesShort: ['Якш', 'Душ', 'Сеш', 'Чор', 'Панҷ', 'Ҷум', 'Шан'],
+
+  monthNames: [
+    'Январ',
+    'Феврал',
+    'Март',
+    'Апрел',
+    'Май',
+    'Июн',
+    'Июл',
+    'Август',
+    'Сентябр',
+    'Октябр',
+    'Ноябр',
+    'Декабр',
+  ],
+
+  monthNamesShort: [
+    'Янв',
+    'Фев',
+    'Мар',
+    'Апр',
+    'Май',
+    'Июн',
+    'Июл',
+    'Авг',
+    'Сен',
+    'Окт',
+    'Ноя',
+    'Дек',
+  ],
+
+} as LocaleInput
