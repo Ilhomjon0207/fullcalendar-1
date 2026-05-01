@@ -4,8 +4,8 @@ const tg: LocaleInput = {
   code: 'tg',
 
   buttonText: {
-    prev: 'Қаблӣ',
-    next: 'Баъдӣ',
+    prev: 'Ба қафо',
+    next: 'Ба пеш',
     today: 'Имрӯз',
     month: 'Моҳ',
     week: 'Ҳафта',
